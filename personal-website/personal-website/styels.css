@@ -1,0 +1,125 @@
+:root {
+    --primary-blue: #1e90ff;
+    --light-blue: #f0f8ff;
+    --dark-blue: #104e8b;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-blue);
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--primary-blue);
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+section {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-blue);
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary-blue);
+}
+
+.date {
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-item {
+    padding: 15px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--light-blue);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .container {
+        padding: 20px 10px;
+    }
+}
